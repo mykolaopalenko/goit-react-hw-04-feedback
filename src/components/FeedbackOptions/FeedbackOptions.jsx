@@ -1,10 +1,6 @@
 import PropTypes from 'prop-types';
 import { StatisticList, StatisticListButton } from './FeedbackOptions.styled';
 
-FeedbackOptions.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.string.isRequired),
-  onLeaveFeedback: PropTypes.func.isRequired,
-};
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <StatisticList>
@@ -22,3 +18,8 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
     </StatisticList>
   );
 }
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string.isRequired),
+  onLeaveFeedback: PropTypes.func.isRequired,
+};
